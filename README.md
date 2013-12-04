@@ -1,7 +1,7 @@
 SpreeFreeItemAction
 ===================
 
-Introduction goes here.
+An action to add a free line item to the order.
 
 Installation
 ------------
@@ -9,7 +9,7 @@ Installation
 Add spree_free_item_action to your Gemfile:
 
 ```ruby
-gem 'spree_free_item_action'
+gem 'spree_free_item_action', github: "Hates/spree_free_item_action"
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -36,5 +36,3 @@ Simply add this require statement to your spec_helper:
 ```ruby
 require 'spree_free_item_action/factories'
 ```
-
-Copyright (c) 2013 [name of extension creator], released under the New BSD License

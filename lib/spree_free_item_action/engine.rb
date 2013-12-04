@@ -17,6 +17,10 @@ module SpreeFreeItemAction
       end
     end
 
+    initializer 'spree.promo.register.promotions.actions.free_item', after: 'spree.promo.register.promotions.actions' do |app|
+      app.config.spree.promotions.actions += [Spree::Promotion::Actions::CreateFreeLineItems]
+    end
+
     config.to_prepare &method(:activate).to_proc
   end
 end
